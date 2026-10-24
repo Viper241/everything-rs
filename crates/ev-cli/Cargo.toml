@@ -1,0 +1,13 @@
+[package]
+name = "ev-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "ev"
+path = "src/main.rs"
+
+[dependencies]
+ev-core.workspace = true
+ev-ntfs.workspace = true

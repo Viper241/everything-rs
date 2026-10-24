@@ -1,0 +1,22 @@
+[package]
+name = "ev-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "everything-rs"
+path = "src/main.rs"
+
+[dependencies]
+ev-core.workspace = true
+ev-ntfs.workspace = true
+eframe = { version = "0.37.0", default-features = false, features = ["glow", "default_fonts", "x11", "wayland", "accesskit"] }
+windows-sys = { workspace = true, features = [
+    "Win32_Foundation",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_DataExchange",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+] }
