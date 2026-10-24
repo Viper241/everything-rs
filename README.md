@@ -7,6 +7,22 @@ modern, memory-safe core with a GPU-accelerated UI.
 
 ![screenshot](docs/screenshot.png)
 
+## Download
+
+Prebuilt Windows x64 binaries are attached to the
+[**v0.1.0 release**](https://github.com/Viper241/everything-rs/releases/latest):
+
+| File | What it is |
+| --- | --- |
+| `everything-rs.exe` | the desktop app (no console window) |
+| `ev.exe` | the command line front end |
+| `everything-rs-0.1.0-win64.zip` | both binaries + a quick-start README |
+
+No installer and no runtime dependencies — copy the exe anywhere and run it.
+The binaries are unsigned, so SmartScreen may warn on first launch
+("More info" → "Run anyway"). Or build from source in one command (below).
+
+
 ```
 everything-rs/
 ├─ crates/
